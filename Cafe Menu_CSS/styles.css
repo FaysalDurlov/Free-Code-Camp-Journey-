@@ -1,0 +1,94 @@
+body {
+  /*background-color: burlywood;*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1{
+  font-size:  40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+h2{
+  font-size:  30px;
+}
+.established {
+  font-style: italic;
+}
+h1,
+h2,
+p {
+  text-align: center;
+}
+h1,h2{
+  font-family: Impact,serif;
+}
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  I can use these 4 line or I can use just 1 line like bellow just 
+  padding Xpx*/
+  padding: 20px;
+  max-width: 500px;
+}
+img{
+  display: block;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr{
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+.bottom-line{
+  margin-top: 25px;
+}
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.flavor,
+.dessert {
+  text-align: left;
+  width: 75%;
+}
+.price {
+  text-align: right;
+  width: 25%;
+}
+/*FOOTER*/
+footer{
+  font-size: 14px;
+}
+.address{
+  margin-bottom: 5px;
+}
+
+a{
+  /* this just set a color for the text */
+  color: black;
+}
+a:visited { 
+  /* if the link is visited then this color will be set */
+  color: grey; 
+}
+a:hover { 
+  /* if the link is hovered by mouse then this color 
+  will be set */
+  color: brown; 
+}
+a:active { 
+  /* for split second this color will show when I clicked the
+  link */
+  color: white; 
+}
