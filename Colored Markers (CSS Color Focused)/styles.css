@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+.container{
+    background-color: rgb(255,255,255);
+    padding: 10px 0px;
+    /* works similer like margin */
+}
+.marker{
+    width: 200px;
+    height: 25px;
+    /* here on margin the first value 
+    setting for top and bottom which is 10px
+    and 2nd value setting right left which is auto */
+    margin: 10px auto;
+}
+.red{
+    background: linear-gradient(90deg,rgb(255,0,0) 75%,rgb(0,255,0),rgb(0,0,255));
+
+
+
+    /*49 step to image background something like this
+    
+    context the class red was renamed from .one to .red
+    here my class was marker one. but I just 
+    create a rule with just one so it called inheretance
+    one inhereted some attribute from marker rule */
+}
+.green{
+    background-color: #007F00;
+}
+.blue{
+    background-color: hsl(240, 100%, 50%);
+}
+/* for RGB color code
+   primery color : Red Green Blue
+   secondary color : Cyan Magenta Yellow 
+   tertiary color : Orange Green Purple chartreuse
+   azure rose
+*/
