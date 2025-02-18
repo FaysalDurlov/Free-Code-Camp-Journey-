@@ -51,6 +51,7 @@ input,textarea{
 }
 
 .inline{
+    /* making raddio button in line */
     width: unset;
     /* margin-top: 0;
     margin-bottom: 0;

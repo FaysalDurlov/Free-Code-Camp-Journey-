@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form" value="Survey">
+        <fieldset>
+            <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
+            <label for="number" id="number-label">Age<input id="number" type="number" min="18" max="120" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Select a Option From the below Dropdown !
+                <select id="dropdown">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select A Radio Button</legend>
+            <label for="Radio-Button-1"><input id="Radio-Button-1" class="inline" type="radio" value="1" name="RadioButton">Radio Button 1</label>
+            <label for="Radio-Button-2"><input id="Radio-Button-2" class="inline" type="radio" value="2" name="RadioButton">Radio Button 2</label>
+            <label for="Radio-Button-3"><input id="Radio-Button-3" class="inline" type="radio" value="3" name="RadioButton">Radio Button 3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select A Check Box</legend>
+            <label for="Check-Option-1"><input id="Check-Option-1" class="inline" type="checkbox" value="Check-1">Check Option 1</label>
+            <label for="Check-Option-2"><input id="Check-Option-2" class="inline" type="checkbox" value="Check-1">Check Option 2</label>
+            <label for="Check-Option-3"><input id="Check-Option-3" class="inline" type="checkbox" value="Check-1">Check Option 3</label>
+            <label for="Check-Option-4"><input id="Check-Option-4" class="inline" type="checkbox" value="Check-1">Check Option 4</label>
+            <label for="Check-Option-5"><input id="Check-Option-5" class="inline" type="checkbox" value="Check-1">Check Option 5</label>
+            <label for="Check-Option-6"><input id="Check-Option-6" class="inline" type="checkbox" value="Check-1">Check Option 6</label>
+            <label for="">Say Something About Yourself ?<textarea placeholder="I like to Code...."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+        </form>
+  </body>
+</html>
