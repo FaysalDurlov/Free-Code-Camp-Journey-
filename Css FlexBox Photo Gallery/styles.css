@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+/* .gallery{
+    width: 50%;
+    border: 10px solid red;
+}
+img{
+    width: 100%;
+    padding: 5px;
+    border: 5px solid blue
+} */
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    /* without this my pic were being distored
+    so obejct fit filled the container with the image while keeping
+    the ratio same but filling + keeping ration same is not possible
+    so its cropping the image to keep it awy from distored */
+    border-radius: 10px;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+.gallery{
+    display: flex;
+    /*Flexbox is a one-dimensional CSS layout that can 
+    control the way items are spaced out and aligned within 
+    a container. This will make the element a flex container. 
+    Any direct children of a flex container are called 
+    flex items. */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* I can align items in any axis with this.
+    is this case I have aligned the items vartically because
+    the flex direction is row */
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px ;
+    /* The gap property and its row-gap and column-gap sub-properties 
+    provide this functionality for flex, grid, and multi-column layout. 
+    You apply the property to the container element. */
+}
+
+.gallery::after{
+    /* Imagine you have a gallery with images arranged in a flex container using display: flex.
+
+    If you set justify-content: center;, the images are centered in the container.
+    If you have an odd number of images, the last image in the last row remains 
+        centered instead of aligning to the left.
+    To fix this, you can use ::after to add an invisible element that fills up 
+        the empty space, pushing the last image to the left. */
+    content: "";
+    width: 350px;
+
+}
